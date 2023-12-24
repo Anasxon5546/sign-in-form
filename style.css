@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --bg-color: #0E1422;
+  --text-color: #dedede;
+  --form-color: #1B232E;
+  --border-color: #2E353F;
+  --input-color: #252D3A;
+  --dark-text-color: #AFB4BA;
+  --checked-color: #0D645E;
+}
+body {
+  width: 100vw;
+  background: var(--bg-color);
+}
+
+h1 {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 30px;
+}
+
+p {
+  color: var(--text-color);
+  text-align: center;
+  margin: 8px;
+  font-size: 15px;
+}
+a {
+  color: var(--text-color);
+}
+
+form {
+  width: 90%;
+  margin: 25px auto;
+  padding: 10%;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background: var(--form-color);
+}
+label {
+  color: var(--text-color);
+}
+input {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  margin-top: 10px;
+  background: var(--input-color);
+}
+input[type="checkbox"] {
+  width: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  margin-top: 0;
+  margin-right: 10px;
+}
+input[type="checkbox"]:checked {
+  background: var(--checked-color);
+}
+label[for='rememberMe'] {
+  color: var(--dark-text-color);
+  margin-right: 30px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+input[type="submit"] {
+  background: var(--checked-color);
+  color: white;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.line {
+  border: none;
+  border-top: 1px solid white;
+}
+
+.centered-text {
+  width: 120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--form-color);
+  color: var(--dark-text-color);
+  font-size: 15px;
+}
+button {
+  width: 105px;
+  height: 40px;
+  background: var(--input-color);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+.google {
+  margin-left: auto;
+}
+i {
+  background: var(dark-text-color);
+  font-size: 20px;
+  }
